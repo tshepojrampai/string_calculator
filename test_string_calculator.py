@@ -34,7 +34,8 @@ def test_moreChar_delim():
 def test_diffAnylength_delim():
     assert(calc.add("//[:D][%]\n1:D2%3") == 6)
     assert(calc.add("//[**][%%%]\n1**2%%%3") == 6)
-    assert(calc.add("//[(--')][%]\n1(--')2%3") == 6)    
+    assert(calc.add("//[(--')][%]\n1(--')2%3") == 6)  
+    
 def test_moreDiff_delimiters():
     assert calc.add("//[:D][%]\n1:D2%3") == 6
     assert calc.add("//[***][%%%]\n1***2%%%3") == 6
